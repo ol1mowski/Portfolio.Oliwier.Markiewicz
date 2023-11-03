@@ -1,19 +1,28 @@
 import style from './header.module.scss';
-
+import x from '../../assets/icons/hamburger_x.svg';
 import hamburger from '../../assets/icons/hamburger.svg';
 import { useEffect, useRef } from 'react';
 
 const Header = () => {
 
     const hamburegr = useRef(null);
+    const menu = useRef(null);
+    const close = useRef(null);
 
     useEffect(() => {
 
         const hamburgerClickHandler = () => {
-            console.log('click!');
+            menu.current.style.transform = 'translateX(0)';
+            menu.current.style.transition = 'transform 0.7s';
+
+            menu.current.style.display = 'block';
+        }
+        const menuClickHandler = () => {
+            menu.current.style.display = 'none';
         }
 
         hamburegr.current.addEventListener('click', hamburgerClickHandler);
+        close.current.addEventListener('click', menuClickHandler);
     }, [hamburegr])
 
     return (
@@ -30,6 +39,33 @@ const Header = () => {
                     </div>
                 </nav>
             </header>
+            <nav ref={menu} className={style.headerContainer__menu}>
+                <div className={style.headerContainer__menu__x}>
+                    <img ref={close} src={x} alt='close icon' className={style.headerContainer__menu__x__icon} />
+                </div>
+                <section className={style.headerContainer__menu__nav}>
+                    <a href='#home'>
+                        <div className={style.headerContainer__menu__nav__item}>
+                            Home
+                        </div>
+                    </a>
+                    <a href='#about'>
+                        <div className={style.headerContainer__menu__nav__item}>
+                            About
+                        </div>
+                    </a>
+                    <a href='#projects'>
+                        <div className={style.headerContainer__menu__nav__item}>
+                            Projects
+                        </div>
+                    </a>
+                    <a href='#contact'>
+                        <div className={style.headerContainer__menu__nav__item}>
+                            Contact
+                        </div>
+                    </a>
+                </section>
+            </nav>
         </>
     );
 };
