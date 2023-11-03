@@ -1,0 +1,20 @@
+//text colors
+
+$text-dark-color: #2d2e32;
+$text-blue-color: #147efb;
+
+$nav-color: #fff;
+
+@mixin d-flex() {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@mixin nav() {
+    box-shadow: 0 0 10px rgba(0,0,0,.09);
+    background-color: $nav-color;
+    @include d-flex;
+}
+
+$dark-white-background-color: #f9f9f9;

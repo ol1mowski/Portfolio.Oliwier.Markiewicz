@@ -1,0 +1,11 @@
+@import '../../sass/settings.scss';
+
+.headerContainer {
+    @include nav;
+    justify-content: space-around;
+    &__nameSection {
+        &__content {
+            color: $text-dark-color;
+        }
+    }
+}
