@@ -1,0 +1,31 @@
+@import '../../../sass/settings.scss';
+
+.techStackContainer {
+    @include d-flex-column;
+    margin-top: 4rem;
+    padding: 0 3rem;
+    &__title {
+        &__p {
+            border-bottom: 2px solid rgba(45, 46, 50, .5);
+            margin-bottom: 3rem;
+            padding-bottom: 1rem;
+            color: $text-dark-color;
+            font-family: Mulish, sans-serif;
+            font-weight: 600;
+            font-size: 1.1rem;
+        }
+    }
+    
+    &__skillsWrapper {
+        @include d-flex;
+        flex-wrap: wrap;
+        gap: 2rem;
+        align-content: center;
+        &__skill {
+            &__redux {
+                width: 10%;
+            }
+        }
+    }
+
+}

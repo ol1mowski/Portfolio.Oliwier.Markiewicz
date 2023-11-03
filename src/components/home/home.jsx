@@ -1,6 +1,7 @@
 import style from './home.module.scss';
 import img from '../../assets/images/portret.webp';
 import hello from '../../assets/icons/hello.png';
+import TechStack from './techStack/techStack';
 
 const Home = () => {
     return (
@@ -26,9 +27,7 @@ const Home = () => {
                         </section>
                     </article>
                 </section>
-                <section className={style.homeContainer__techSection}>
-
-                </section>
+                <TechStack />
             </section>
         </>
     );

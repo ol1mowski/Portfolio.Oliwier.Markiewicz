@@ -5,6 +5,7 @@
     padding: 1rem 0;
     justify-content: space-around;
     position: sticky;
+    z-index: 100;
     top: 0;
     gap: 30vw;
     &__nameSection {
