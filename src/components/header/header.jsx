@@ -38,7 +38,23 @@ const Header = () => {
                         <img ref={hamburegr} src={hamburger} alt='hamburger manu icon' className={style.headerContainer__navSection__icon__img} />
                     </div>
                 </nav>
+                <nav className={style.headerContainer__navSectionBig}>
+                    <a href='#home'>
+                        <div className={style.headerContainer__navSectionBig__items}>Home</div>
+                    </a>
+                    <a href='#about'>
+                        <div className={style.headerContainer__navSectionBig__items}>About</div>
+                    </a>
+                    <a href='#projects'>
+                        <div className={style.headerContainer__navSectionBig__items}>Projects</div>
+                    </a>
+                    <a href='#contact'>
+                        <div className={style.headerContainer__navSectionBig__items}>Contact</div>
+                    </a>
+                </nav>
             </header>
+
+
             <nav ref={menu} className={style.headerContainer__menu}>
                 <div className={style.headerContainer__menu__x}>
                     <img ref={close} src={x} alt='close icon' className={style.headerContainer__menu__x__icon} />

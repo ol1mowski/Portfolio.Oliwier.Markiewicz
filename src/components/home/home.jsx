@@ -1,19 +1,18 @@
 import style from './home.module.scss';
-import img from '../../assets/images/portret.webp';
+import img from '../../assets/images/portret.jpeg';
 import hello from '../../assets/icons/hello.png';
 import TechStack from './techStack/techStack';
 
 const Home = () => {
     return (
         <>
-            <section className={style.homeContainer}>
+            <section id='home' className={style.homeContainer}>
                 <section className={style.homeContainer__infoSection}>
                     <img src={img} alt='oliwier img' className={style.homeContainer__infoSection__img} />
                     <article className={style.homeContainer__infoSection__content}>
                         <h1 className={style.homeContainer__infoSection__content__h1}>
-                            Front-End React Developer
+                            Front-End React <br />Developer
                         </h1>
-                        <img src={hello} alt='hello icon' className={style.homeContainer__infoSection__content__helloIcon} />
                         <p className={style.homeContainer__infoSection__content__p}>
                             Hi, I'm Oliwier Markiewicz. A passionate Front-end React Developer based in Sieradz, Poland. 📍
                         </p>

@@ -2,18 +2,45 @@
 
 .headerContainer {
     @include nav;
-    padding: 1rem 0;
+    padding: 2rem 0;
     justify-content: space-around;
     position: sticky;
     z-index: 100;
     top: 0;
     gap: 30vw;
+
     &__nameSection {
         &__content {
             color: $text-dark-color;
             font-weight: 800;
         }
     }
+
+    &__navSection {
+        @media screen and (min-width: map-get($breakpoints, big-tablets)) {
+            display: none;
+        }
+    }
+
+    &__navSectionBig {
+        display: none;
+
+        @media screen and (min-width: map-get($breakpoints, big-tablets)) {
+            display: block;
+            @include d-flex;
+            gap: 2rem;
+        }
+        &__items {
+            color: $text-dark-color;
+            font-weight: 600;
+            transition: color .4s;
+        }
+        &__items:hover {
+            color: $text-blue-color;
+            cursor: pointer;
+        }
+    }
+
     &__menu {
         display: none;
         transform: translateX(-20rem);
@@ -25,19 +52,23 @@
         color: $text-dark-color;
         top: 0;
         height: 100vh;
+
         &__x {
             height: 10%;
             display: flex;
             justify-content: flex-end;
+
             &__icon {
                 width: 2rem;
                 margin-top: 1rem;
                 margin-right: 2rem;
             }
         }
+
         &__nav {
             @include d-flex-column;
             height: 90%;
+
             &__item {
                 margin-bottom: 2rem;
                 font-weight: 500;

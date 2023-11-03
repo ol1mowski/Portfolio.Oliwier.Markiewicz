@@ -4,7 +4,16 @@
     @include d-flex-column;
     margin-top: 4rem;
     padding: 0 2rem;
+    @media screen and (min-width: map-get($breakpoints, big-tablets)) {
+        @include d-flex;
+        flex-direction: row;
+        gap: 7rem;
+        justify-content: flex-start;
+    }
     &__title {
+        @media screen and (min-width: map-get($breakpoints, big-tablets)) {
+            @include d-flex;
+        }
         &__p {
             border-bottom: 2px solid rgba(45, 46, 50, .5);
             margin-bottom: 3rem;
@@ -13,6 +22,12 @@
             font-family: Mulish, sans-serif;
             font-weight: 600;
             font-size: 1.1rem;
+            @media screen and (min-width: map-get($breakpoints, big-tablets)) {
+                border-bottom: none;
+                border-right: 2px solid rgba(45, 46, 50, .5);
+                padding: 0 2rem;
+                margin: 0;
+            }
         }
     }
     

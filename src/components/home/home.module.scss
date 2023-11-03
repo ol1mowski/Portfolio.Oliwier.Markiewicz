@@ -2,16 +2,32 @@
 
 .homeContainer {
     padding-top: 2rem;
+    padding-bottom: 10rem;
     background-color: $dark-white-background-color;
+    @media screen and (min-width: map-get($breakpoints, big-tablets)) {
+        width: 100vw;
+    }
 
     &__infoSection {
         @include d-flex-column;
+        @media screen and (min-width: map-get($breakpoints, big-tablets)) {
+            @include d-flex;
+            flex-direction: row-reverse;
+        }
 
         &__img {
             width: 50%;
             border-radius: 30%;
             animation: imgWave 2s infinite;
             border: 2px solid #000;
+            @media screen and (min-width: map-get($breakpoints, big-tablets)) {
+                width: 30%;
+                margin-right: 2rem;
+            }
+            @media screen and (min-width: 1450px) {
+                margin-right: 15rem;
+                margin-top: 1rem;
+            }
         }
 
         &__content {
@@ -20,22 +36,28 @@
             width: 90vw;
             position: relative;
 
-            &__helloIcon {
-                width: 3rem;
-                position: absolute;
-                top: 3rem;
-                right: 1.5rem;
-            }
-
             &__h1 {
-                line-height: 3rem;
                 font-size: 2.5rem;
                 color: $text-dark-color;
+                @media screen and (min-width: 500px) {
+                    font-size: 4rem;
+                }
+                @media screen and (min-width: 1200px) {
+                    font-size: 4.5rem;
+                }
+                @media screen and (min-width: 1350px) {
+                    padding: 0 10rem;
+                }
             }
 
             &__p {
+                
                 margin-top: 2rem;
                 @include p;
+                @media screen and (min-width: 500px) {
+                    width: 30rem;
+                    margin: 2rem auto;
+                }
             }
 
             &__icons {
