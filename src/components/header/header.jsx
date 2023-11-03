@@ -9,6 +9,12 @@ const Header = () => {
     const menu = useRef(null);
     const close = useRef(null);
 
+    const close1 = useRef(null);
+    const close2 = useRef(null);
+    const close3 = useRef(null);
+    const close4 = useRef(null);
+
+
     useEffect(() => {
 
         const hamburgerClickHandler = () => {
@@ -21,9 +27,17 @@ const Header = () => {
             menu.current.style.display = 'none';
         }
 
+        console.log(close1);
+        
+
+
         hamburegr.current.addEventListener('click', hamburgerClickHandler);
         close.current.addEventListener('click', menuClickHandler);
-    }, [hamburegr])
+        close1.current.addEventListener('click', menuClickHandler);
+        close2.current.addEventListener('click', menuClickHandler);
+        close3.current.addEventListener('click', menuClickHandler);
+        close4.current.addEventListener('click', menuClickHandler);
+    }, [])
 
     return (
         <>
@@ -61,22 +75,22 @@ const Header = () => {
                 </div>
                 <section className={style.headerContainer__menu__nav}>
                     <a href='#home'>
-                        <div className={style.headerContainer__menu__nav__item}>
+                        <div ref={close1} className={style.headerContainer__menu__nav__item}>
                             Home
                         </div>
                     </a>
                     <a href='#about'>
-                        <div className={style.headerContainer__menu__nav__item}>
+                        <div ref={close2} className={style.headerContainer__menu__nav__item}>
                             About
                         </div>
                     </a>
                     <a href='#projects'>
-                        <div className={style.headerContainer__menu__nav__item}>
+                        <div ref={close3} className={style.headerContainer__menu__nav__item}>
                             Projects
                         </div>
                     </a>
                     <a href='#contact'>
-                        <div className={style.headerContainer__menu__nav__item}>
+                        <div ref={close4} className={style.headerContainer__menu__nav__item}>
                             Contact
                         </div>
                     </a>
