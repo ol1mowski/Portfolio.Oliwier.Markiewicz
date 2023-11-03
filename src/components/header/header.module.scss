@@ -2,6 +2,7 @@
 
 .headerContainer {
     @include nav;
+    padding: 1rem 0;
     justify-content: space-around;
     position: sticky;
     top: 0;

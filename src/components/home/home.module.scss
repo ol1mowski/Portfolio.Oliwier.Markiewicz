@@ -1,0 +1,50 @@
+@import '../../sass/settings.scss';
+
+.homeContainer {
+    padding-top: 2rem;
+    background-color: $dark-white-background-color;
+
+    &__infoSection {
+        @include d-flex-column;
+
+        &__img {
+            width: 50%;
+        }
+
+        &__content {
+            margin-top: 3rem;
+            text-align: center;
+            width: 90vw;
+            position: relative;
+
+            &__helloIcon {
+                width: 3rem;
+                position: absolute;
+                top: 3rem;
+                right: 1.5rem;
+            }
+
+            &__h1 {
+                line-height: 3rem;
+                font-size: 2.5rem;
+                color: $text-dark-color;
+            }
+
+            &__p {
+                margin-top: 2rem;
+                @include p;
+            }
+
+            &__icons {
+                margin-top: 1.5rem;
+                @include d-flex;
+                gap: 1rem;
+
+                &__icon:hover path {
+                    stroke: $text-blue-color;
+                }
+
+            }
+        }
+    }
+}

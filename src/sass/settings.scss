@@ -3,12 +3,28 @@
 $text-dark-color: #2d2e32;
 $text-blue-color: #147efb;
 
+
+@mixin p() {
+    font-family: Mulish,sans-serif;
+    color: #555;
+    font-size: 1.2rem;
+    font-weight: 500;
+    line-height: 1.6;
+}
+
 $nav-color: #fff;
 
 @mixin d-flex() {
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+@mixin d-flex-column() {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
 }
 
 @mixin nav() {
