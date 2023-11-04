@@ -31,7 +31,7 @@
         }
 
         &__content {
-            margin-top: 3rem;
+            margin-top: $article-margin;
             text-align: center;
             width: 90vw;
             position: relative;
@@ -52,7 +52,7 @@
 
             &__p {
                 
-                margin-top: 2rem;
+                margin-top: $article-margin;
                 @include p;
                 @media screen and (min-width: 500px) {
                     width: 30rem;

@@ -1,0 +1,43 @@
+@import '../../sass/settings.scss';
+
+.aboutContainer {
+    margin-top: 5rem;
+    background-color: #fff;
+
+    &__imageSection {
+        width: 80vw;
+        margin: 0 auto;
+
+        &__img {
+            width: 100%;
+            border-radius: .7rem;
+        }
+    }
+
+    &__contentSection {
+        @include d-flex-column;
+        width: 80vw;
+        margin: 0 auto;
+        &__p {
+            text-align: center;
+            @include p;
+            margin-top: $article-margin;
+        }
+
+        &__h3 {
+            margin-top: $article-margin;
+            color: $text-blue-color;
+            font-size: 1rem;
+            font-weight: 700;
+        }
+
+        &__h4 {
+            text-align: center;
+            color: $text-dark-color;
+            font-size: 1.5rem;
+            line-height: 1.4;
+            margin-top: 1rem;
+            font-weight: 700;
+        }
+    }
+}
