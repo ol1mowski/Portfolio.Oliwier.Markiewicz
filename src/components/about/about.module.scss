@@ -57,22 +57,14 @@
         }
 
         &__h3 {
-            margin-top: $article-margin;
-            color: $text-blue-color;
-            font-size: 1rem;
-            font-weight: 700;
+            @include small-headers;
             @media screen and (min-width: 1020px) {
                 text-align: left;
             }
         }
 
         &__h4 {
-            text-align: center;
-            color: $text-dark-color;
-            font-size: 1.5rem;
-            line-height: 1.4;
-            margin-top: 1rem;
-            font-weight: 700;
+            @include below-headers;
             @media screen and (min-width: 1020px) {
                 text-align: left;
                 font-size: 1.6rem;

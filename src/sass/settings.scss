@@ -9,6 +9,23 @@ $nav-color: #fff;
 
 //mixins
 
+@mixin small-headers() {
+    margin-top: $article-margin;
+    color: $text-blue-color;
+    font-size: 1rem;
+    font-weight: 700;
+    text-align: center;
+}
+
+@mixin below-headers() {
+    text-align: center;
+    color: $text-dark-color;
+    font-size: 1.5rem;
+    line-height: 1.4;
+    margin-top: 1rem;
+    font-weight: 700;
+}
+
 @mixin d-flex() {
     display: flex;
     justify-content: center;

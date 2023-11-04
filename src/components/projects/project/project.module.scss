@@ -1,0 +1,74 @@
+@import '../../../sass/settings.scss';
+
+.projectWrapper {
+    width: 90vw;
+    background-color: #fff;
+    border-radius: 1.7rem;
+
+    &__imgSection {
+        margin-top: 1.5rem;
+
+        &__img {
+            margin: 0 auto;
+            display: block;
+            border-radius: 1.7rem;
+            width: 90%;
+            min-height: 10rem;
+        }
+    }
+
+    &__titleSection {
+        margin: 2rem 0;
+
+        &__wrapper {
+            @include d-flex;
+            padding: 0 3rem;
+            gap: 1rem;
+
+            &__h3 {
+                color: $text-dark-color;
+            }
+
+            &__p {
+                color: #555;
+                font-size: 1rem;
+            }
+        }
+    }
+
+    &__contentSection {
+        width: 80%;
+        margin: 0 auto;
+
+        &__pBig {
+            @include p;
+            line-height: 1.5rem;
+            text-align: center;
+        }
+    }
+    &__toolsSection {
+        @include d-flex;
+        margin-top: 1rem;
+        gap: 1rem;
+        &__tool {
+            padding: .5rem 1rem;
+            box-shadow: 0 0 10px rgba(0,0,0,.09);
+            font-weight: 600;
+        }
+    }
+    &__iconSection {
+        @include d-flex;
+        margin-top: 1rem;
+        gap: 1rem;
+        &__icon {
+            @include d-flex;
+            &__span {
+                font-size: 1.2rem;
+                color: $text-dark-color;
+            }
+            &__img {
+                width: 40%;
+            }
+        }
+    }
+}
