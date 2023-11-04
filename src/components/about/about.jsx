@@ -1,13 +1,16 @@
 import style from './about.module.scss';
 import about from '../../assets/images/about.webp';
-
+// import dev_icon from '../../assets/icons/about_icon.svg';
+// import icon from '../../assets/icons/dev.png';
 
 const About = () => {
     return (
         <>
-            <section className={style.aboutContainer}>
+            <section id='about' className={style.aboutContainer}>
                 <div className={style.aboutContainer__imageSection}>
                     <img src={about} alt='work place' className={style.aboutContainer__imageSection__img} />
+                    {/* <img src={dev_icon} alt='web dev icon' className={style.aboutContainer__imageSection__imgDev} />
+                    <img src={icon} alt='dev icon' className={style.aboutContainer__imageSection__iconDev} /> */}
                 </div>
                 <div className={style.aboutContainer__contentSection}>
                     <h3 className={style.aboutContainer__contentSection__h3}>

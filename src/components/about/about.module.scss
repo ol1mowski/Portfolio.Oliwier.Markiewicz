@@ -1,16 +1,39 @@
 @import '../../sass/settings.scss';
 
 .aboutContainer {
-    margin-top: 5rem;
+    margin: 5rem 0;
     background-color: #fff;
+    @media screen and (min-width: 1020px) {
+       @include d-flex;
+       padding: 0 3rem;
+       gap: 5rem;
+    }
 
     &__imageSection {
         width: 80vw;
         margin: 0 auto;
+        @include d-flex;
+        position: relative;
+        @media screen and (min-width: 1020px) {
+            justify-content: flex-end;
+        }
 
         &__img {
             width: 100%;
             border-radius: .7rem;
+            @media screen and (min-width: 700px) {
+                width: 70%;
+            }
+            @media screen and (min-width: 700px) {
+                width: 90%;
+                margin-right: 3rem;
+            } 
+            @media screen and (min-width: 1020px) {
+                margin: 0;
+                height: 20rem;
+                width: 25rem;
+            }
+            
         }
     }
 
@@ -18,10 +41,19 @@
         @include d-flex-column;
         width: 80vw;
         margin: 0 auto;
+        @media screen and (min-width: 1020px) {
+            display: block;
+        }
         &__p {
             text-align: center;
             @include p;
             margin-top: $article-margin;
+            color: #767676;
+            @media screen and (min-width: 1020px) {
+                text-align: left;
+                font-size: 1.1rem;
+                width: 35rem;
+            }
         }
 
         &__h3 {
@@ -29,6 +61,9 @@
             color: $text-blue-color;
             font-size: 1rem;
             font-weight: 700;
+            @media screen and (min-width: 1020px) {
+                text-align: left;
+            }
         }
 
         &__h4 {
@@ -38,6 +73,16 @@
             line-height: 1.4;
             margin-top: 1rem;
             font-weight: 700;
+            @media screen and (min-width: 1020px) {
+                text-align: left;
+                font-size: 1.6rem;
+            }
         }
+    }
+}
+
+@keyframes iconSpin {
+    100% {
+        transform: rotate(1turn);
     }
 }
