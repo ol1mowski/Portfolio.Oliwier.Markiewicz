@@ -30,6 +30,7 @@ $nav-color: #fff;
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-direction: row;
 }
 
 @mixin d-flex-column() {

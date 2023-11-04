@@ -4,16 +4,33 @@
     width: 90vw;
     background-color: #fff;
     border-radius: 1.7rem;
+    margin-bottom: 5rem;
+    @include d-flex-column;
+    @media screen and (min-width: 650px) {
+        width: 30rem;
+    }
+    @media screen and (min-width: 1020px) {
+        @include d-flex;
+        width: 60rem;
+    }
 
     &__imgSection {
         margin-top: 1.5rem;
+        @media screen and (min-width: 1020px) {
+            width: 70%;
+        }
 
         &__img {
             margin: 0 auto;
             display: block;
             border-radius: 1.7rem;
             width: 90%;
-            min-height: 10rem;
+        }
+    }
+
+    &__descriSection {
+        @media screen and (min-width: 1020px) {
+            width: 30%;
         }
     }
 
@@ -58,17 +75,41 @@
     }
     &__iconSection {
         @include d-flex;
-        margin-top: 1rem;
-        gap: 1rem;
+        margin-top: 2rem;
+        padding-bottom: 2rem;
+        gap: 2rem;
+        &__a {
+            transition: color .3s;
+            will-change: transition;
+        }
+        &__a:hover {
+            color: $text-blue-color;
+        }
         &__icon {
             @include d-flex;
+            gap: .5rem;
             &__span {
                 font-size: 1.2rem;
                 color: $text-dark-color;
+                transition: color .3s;
+                will-change: transition;
             }
-            &__img {
-                width: 40%;
+            &__span:hover {
+                color: $text-blue-color;
             }
         }
+    }
+}
+
+#icon_img {
+    width: 1.5rem;
+    height: 1.5rem;
+}
+
+#reverse {
+    @media screen and (min-width: 1020px) {
+        @include d-flex;
+        width: 60rem;
+        flex-direction: row-reverse;;
     }
 }

@@ -1,6 +1,8 @@
 import Project from './project/project';
 import style from './projects.module.scss';
 import courses from '../../assets/images/projects/courses.png';
+import hotel from '../../assets/images/projects/hotel.png';
+import misia from '../../assets/images/projects/photo.png';
 
 const Projects = () => {
 
@@ -14,7 +16,30 @@ const Projects = () => {
             technologies: ['React','SCSS'],
             githubLink: 'https://github.com/ol1mowski/it-shop.de',
             pageLink: 'https://ol1mowski.github.io/it-shop.de/',
-        }
+            reverse: false,
+        },
+        {
+            id: 2,
+            img: misia,
+            title: 'Cantor site',
+            date: 'December 2023',
+            describe: `This is a stunning and interactive photographer's portfolio website built using React.`,
+            technologies: ['React','SCSS'],
+            githubLink: 'https://github.com/ol1mowski/Misia_photo.de',
+            pageLink: 'https://ol1mowski.github.io/Misia_photo.de/',
+            reverse: true,
+        },
+        {
+            id: 3,
+            img: hotel,
+            title: 'Hotel webpage',
+            date: 'July 2023',
+            describe: 'My hotel website is your gateway to an unforgettable travel experience. Site have user-friendly online booking system that allows you to plan your stay with ease.',
+            technologies: ['React','SCSS'],
+            githubLink: 'https://github.com/ol1mowski/Best_hotel.de',
+            pageLink: 'https://ol1mowski.github.io/Best_hotel.de/',
+            reverse: false,
+        },
     ]
 
     return (
@@ -39,6 +64,7 @@ const Projects = () => {
                             technologies={val.technologies}
                             github={val.githubLink}
                             page={val.pageLink}
+                            reverse={val.reverse}
                         />
                     ))}
                 </div>

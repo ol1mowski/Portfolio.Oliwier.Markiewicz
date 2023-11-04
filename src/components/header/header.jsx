@@ -26,8 +26,6 @@ const Header = () => {
         const menuClickHandler = () => {
             menu.current.style.display = 'none';
         }
-
-        console.log(close1);
         
 
 
