@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/Portfolio.Oliwier.Markiewicz/static/css/main.1061a93f.css",
-    "main.js": "/Portfolio.Oliwier.Markiewicz/static/js/main.6ae02850.js",
+    "main.js": "/Portfolio.Oliwier.Markiewicz/static/js/main.4a53c548.js",
     "static/js/787.bb719382.chunk.js": "/Portfolio.Oliwier.Markiewicz/static/js/787.bb719382.chunk.js",
     "static/media/portret.jpeg": "/Portfolio.Oliwier.Markiewicz/static/media/portret.13d55b2603ca49f82d9d.jpeg",
     "static/media/photo.png": "/Portfolio.Oliwier.Markiewicz/static/media/photo.d59d7bac18152ebc224b.png",
@@ -16,11 +16,11 @@
     "static/media/hamburger.svg": "/Portfolio.Oliwier.Markiewicz/static/media/hamburger.98a56e912489f48d04db31acca20ca85.svg",
     "static/media/hamburger_x.svg": "/Portfolio.Oliwier.Markiewicz/static/media/hamburger_x.d271a45ae98d0fc01c7133e80b84fa39.svg",
     "main.1061a93f.css.map": "/Portfolio.Oliwier.Markiewicz/static/css/main.1061a93f.css.map",
-    "main.6ae02850.js.map": "/Portfolio.Oliwier.Markiewicz/static/js/main.6ae02850.js.map",
+    "main.4a53c548.js.map": "/Portfolio.Oliwier.Markiewicz/static/js/main.4a53c548.js.map",
     "787.bb719382.chunk.js.map": "/Portfolio.Oliwier.Markiewicz/static/js/787.bb719382.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.1061a93f.css",
-    "static/js/main.6ae02850.js"
+    "static/js/main.4a53c548.js"
   ]
 }
