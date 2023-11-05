@@ -21,7 +21,7 @@ const Projects = () => {
         {
             id: 2,
             img: misia,
-            title: 'Cantor site',
+            title: 'photographer portfolio',
             date: 'December 2023',
             describe: `This is a stunning and interactive photographer's portfolio website built using React.`,
             technologies: ['React','SCSS'],
