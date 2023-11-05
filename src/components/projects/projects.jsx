@@ -44,7 +44,7 @@ const Projects = () => {
 
     return (
         <>
-            <section className={style.projectsContainer}>
+            <section id='projects' className={style.projectsContainer}>
                 <div className={style.projectsContainer__contentSection}>
                     <h3 className={style.projectsContainer__contentSection__h3}>
                         PORTFOLIO

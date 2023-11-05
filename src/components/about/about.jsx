@@ -6,7 +6,8 @@ import about from '../../assets/images/about.webp';
 const About = () => {
     return (
         <>
-            <section id='about' className={style.aboutContainer}>
+            <div id="about" />
+            <section className={style.aboutContainer}>
                 <div className={style.aboutContainer__imageSection}>
                     <img src={about} alt='work place' className={style.aboutContainer__imageSection__img} />
                     {/* <img src={dev_icon} alt='web dev icon' className={style.aboutContainer__imageSection__imgDev} />

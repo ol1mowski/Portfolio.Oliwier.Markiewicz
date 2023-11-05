@@ -2,6 +2,7 @@
 
 .homeContainer {
     padding-top: 2rem;
+    scroll-margin-top: 10rem;
     padding-bottom: 10rem;
     background-color: $dark-white-background-color;
     @media screen and (min-width: map-get($breakpoints, big-tablets)) {

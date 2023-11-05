@@ -51,7 +51,7 @@ const Project = props => {
                         </a>
                     </div>
                 </div>
-            </div> : <div id='projects' className={style.projectWrapper}>
+            </div> : <div className={style.projectWrapper}>
                 <div className={style.projectWrapper__imgSection}>
                     <img src={props.img} alt='website' className={style.projectWrapper__imgSection__img} />
                 </div>
