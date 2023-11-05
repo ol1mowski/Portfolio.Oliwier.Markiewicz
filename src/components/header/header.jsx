@@ -2,32 +2,40 @@ import style from './header.module.scss';
 import x from '../../assets/icons/hamburger_x.svg';
 import hamburger from '../../assets/icons/hamburger.svg';
 import { useEffect, useRef } from 'react';
+import { Link } from 'react-scroll';
+import { motion } from 'framer-motion';
 
 const Header = () => {
 
     const hamburegr = useRef(null);
     const menu = useRef(null);
     const close = useRef(null);
-
     const close1 = useRef(null);
     const close2 = useRef(null);
     const close3 = useRef(null);
     const close4 = useRef(null);
 
 
-    useEffect(() => {
+    const buttonVariants = {
+        hover: {
+            scale: 1.05,
+            transition: {
+                duration: 0.3,
+                yoyo: Infinity,
+            },
+        },
+    };
 
+    useEffect(() => {
         const hamburgerClickHandler = () => {
             menu.current.style.transform = 'translateX(0)';
             menu.current.style.transition = 'transform 0.7s';
-
             menu.current.style.display = 'block';
-        }
+        };
+
         const menuClickHandler = () => {
             menu.current.style.display = 'none';
-        }
-        
-
+        };
 
         hamburegr.current.addEventListener('click', hamburgerClickHandler);
         close.current.addEventListener('click', menuClickHandler);
@@ -35,8 +43,7 @@ const Header = () => {
         close2.current.addEventListener('click', menuClickHandler);
         close3.current.addEventListener('click', menuClickHandler);
         close4.current.addEventListener('click', menuClickHandler);
-    }, [])
-
+    }, []);
     return (
         <>
             <header className={style.headerContainer}>
@@ -51,18 +58,70 @@ const Header = () => {
                     </div>
                 </nav>
                 <nav className={style.headerContainer__navSectionBig}>
-                    <a href='#home'>
-                        <div className={style.headerContainer__navSectionBig__items}>Home</div>
-                    </a>
-                    <a href='#about'>
-                        <div className={style.headerContainer__navSectionBig__items}>About</div>
-                    </a>
-                    <a href='#projects'>
-                        <div className={style.headerContainer__navSectionBig__items}>Projects</div>
-                    </a>
-                    <a href='#contact'>
-                        <div className={style.headerContainer__navSectionBig__items}>Contact</div>
-                    </a>
+                    <Link
+                        activeClass="active"
+                        to="home"
+                        spy={true}
+                        smooth={true}
+                        offset={-70}
+                        duration={1200}
+                    >
+                        <motion.div
+                            className={style.headerContainer__navSectionBig__items}
+                            variants={buttonVariants}
+                            whileHover="hover"
+                        >
+                            Home
+                        </motion.div>
+                    </Link>
+                    <Link
+                        activeClass="active"
+                        to="about"
+                        spy={true}
+                        smooth={true}
+                        offset={-70}
+                        duration={1200}
+                    >
+                        <motion.div
+                            className={style.headerContainer__navSectionBig__items}
+                            variants={buttonVariants}
+                            whileHover="hover"
+                        >
+                            About
+                        </motion.div>
+                    </Link>
+                    <Link
+                        activeClass="active"
+                        to="projects"
+                        spy={true}
+                        smooth={true}
+                        offset={-70}
+                        duration={1200}
+                    >
+                        <motion.div
+                            className={style.headerContainer__navSectionBig__items}
+                            variants={buttonVariants}
+                            whileHover="hover"
+                        >
+                            Projects
+                        </motion.div>
+                    </Link>
+                    <Link
+                        activeClass="active"
+                        to="contact"
+                        spy={true}
+                        smooth={true}
+                        offset={-70}
+                        duration={1200}
+                    >
+                        <motion.div
+                            className={style.headerContainer__navSectionBig__items}
+                            variants={buttonVariants}
+                            whileHover="hover"
+                        >
+                            Contact
+                        </motion.div>
+                    </Link>
                 </nav>
             </header>
 
@@ -72,26 +131,74 @@ const Header = () => {
                     <img ref={close} src={x} alt='close icon' className={style.headerContainer__menu__x__icon} />
                 </div>
                 <section className={style.headerContainer__menu__nav}>
-                    <a href='#home'>
-                        <div ref={close1} className={style.headerContainer__menu__nav__item}>
+                    <Link
+                        activeClass="active"
+                        to="home"
+                        spy={true}
+                        smooth={true}
+                        offset={-70}
+                        duration={1200}
+                    >
+                        <motion.div
+                            ref={close1}
+                            className={style.headerContainer__menu__nav__item}
+                            variants={buttonVariants}
+                            whileHover="hover"
+                        >
                             Home
-                        </div>
-                    </a>
-                    <a href='#about'>
-                        <div ref={close2} className={style.headerContainer__menu__nav__item}>
+                        </motion.div>
+                    </Link>
+                    <Link
+                        activeClass="active"
+                        to="about"
+                        spy={true}
+                        smooth={true}
+                        offset={-70}
+                        duration={1200}
+                    >
+                        <motion.div
+                            ref={close2}
+                            className={style.headerContainer__menu__nav__item}
+                            variants={buttonVariants}
+                            whileHover="hover"
+                        >
                             About
-                        </div>
-                    </a>
-                    <a href='#projects'>
-                        <div ref={close3} className={style.headerContainer__menu__nav__item}>
+                        </motion.div>
+                    </Link>
+                    <Link
+                        activeClass="active"
+                        to="projects"
+                        spy={true}
+                        smooth={true}
+                        offset={-70}
+                        duration={1200}
+                    >
+                        <motion.div
+                            ref={close3}
+                            className={style.headerContainer__menu__nav__item}
+                            variants={buttonVariants}
+                            whileHover="hover"
+                        >
                             Projects
-                        </div>
-                    </a>
-                    <a href='#contact'>
-                        <div ref={close4} className={style.headerContainer__menu__nav__item}>
+                        </motion.div>
+                    </Link>
+                    <Link
+                        activeClass="active"
+                        to="contact"
+                        spy={true}
+                        smooth={true}
+                        offset={-70}
+                        duration={1200}
+                    >
+                        <motion.div
+                            ref={close4}
+                            className={style.headerContainer__menu__nav__item}
+                            variants={buttonVariants}
+                            whileHover="hover"
+                        >
                             Contact
-                        </div>
-                    </a>
+                        </motion.div>
+                    </Link>
                 </section>
             </nav>
         </>

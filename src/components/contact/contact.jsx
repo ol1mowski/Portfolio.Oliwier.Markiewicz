@@ -1,4 +1,3 @@
-import { useState } from 'react';
 import style from './contact.module.scss';
 
 const Contact = () => {
