@@ -65,11 +65,13 @@
                 margin-top: 1.5rem;
                 @include d-flex;
                 gap: 1rem;
-
-                &__icon:hover path {
-                    stroke: $text-blue-color;
+                &__a {
+                    will-change: color;
+                    transition: color .3s;
                 }
-
+                &__a:hover {
+                    color: $text-blue-color;
+                }
             }
         }
     }
