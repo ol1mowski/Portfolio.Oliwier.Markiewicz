@@ -1,0 +1,20 @@
+@import '../../../sass/settings.scss';
+
+.navSectionBig {
+    display: none;
+
+    @media screen and (min-width: map-get($breakpoints, big-tablets)) {
+        display: block;
+        @include d-flex;
+        gap: 2rem;
+    }
+    &__items {
+        color: $text-dark-color;
+        font-weight: 600;
+        transition: color .4s;
+    }
+    &__items:hover {
+        color: $text-blue-color;
+        cursor: pointer;
+    }
+}
