@@ -1,5 +1,5 @@
 import style from './home.module.scss';
-import img from '../../assets/images/portret.jpeg';
+import img from '../../assets/images/portret.webp';
 import TechStack from './techStack/techStack';
 
 const Home = () => {
