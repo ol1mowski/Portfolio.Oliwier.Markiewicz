@@ -1,26 +1,26 @@
 {
   "files": {
-    "main.css": "/Portfolio.Oliwier.Markiewicz/static/css/main.39042faf.css",
-    "main.js": "/Portfolio.Oliwier.Markiewicz/static/js/main.61b7e47d.js",
+    "main.css": "/Portfolio.Oliwier.Markiewicz/static/css/main.6b7bf841.css",
+    "main.js": "/Portfolio.Oliwier.Markiewicz/static/js/main.541a57aa.js",
     "static/js/787.bb719382.chunk.js": "/Portfolio.Oliwier.Markiewicz/static/js/787.bb719382.chunk.js",
-    "static/media/portret.jpeg": "/Portfolio.Oliwier.Markiewicz/static/media/portret.13d55b2603ca49f82d9d.jpeg",
-    "static/media/photo.png": "/Portfolio.Oliwier.Markiewicz/static/media/photo.d59d7bac18152ebc224b.png",
-    "static/media/hotel.png": "/Portfolio.Oliwier.Markiewicz/static/media/hotel.39caabf94e36d72c5614.png",
-    "static/media/courses.png": "/Portfolio.Oliwier.Markiewicz/static/media/courses.06f54bdfbfc028141dc5.png",
-    "static/media/about.webp": "/Portfolio.Oliwier.Markiewicz/static/media/about.62b47e7f183d4b4e9feb.webp",
-    "static/media/reactsass.svg": "/Portfolio.Oliwier.Markiewicz/static/media/reactsass.60f64de304b8675ec2b8baaa8e29a1a1.svg",
+    "static/media/about.webp": "/Portfolio.Oliwier.Markiewicz/static/media/about.66b8ab8573ee5633c22a.webp",
+    "static/media/hotel.webp": "/Portfolio.Oliwier.Markiewicz/static/media/hotel.3bd285f59f8e7cc6ac87.webp",
+    "static/media/photo.webp": "/Portfolio.Oliwier.Markiewicz/static/media/photo.9fea2ef51415bc51f6e9.webp",
+    "static/media/portret.webp": "/Portfolio.Oliwier.Markiewicz/static/media/portret.e2e97016ebc77162c748.webp",
+    "static/media/courses.webp": "/Portfolio.Oliwier.Markiewicz/static/media/courses.849dcc96f67f2cd095c0.webp",
+    "static/media/reactsass.svg": "/Portfolio.Oliwier.Markiewicz/static/media/reactsass.6064fe53c8fc164b92e29a0ef35faa8a.svg",
     "static/media/jsts.svg": "/Portfolio.Oliwier.Markiewicz/static/media/jsts.621929cb75c6f13515cfd8de5b4de81e.svg",
+    "static/media/python.svg": "/Portfolio.Oliwier.Markiewicz/static/media/python.e72ba17e0d183ee8b613690fe2e9b005.svg",
     "static/media/htmlcss.svg": "/Portfolio.Oliwier.Markiewicz/static/media/htmlcss.baf760ccf6c222118ba2717d4d707cc0.svg",
-    "static/media/python.svg": "/Portfolio.Oliwier.Markiewicz/static/media/python.62e8a4442709e711eb8c89041804c775.svg",
     "index.html": "/Portfolio.Oliwier.Markiewicz/index.html",
     "static/media/hamburger.svg": "/Portfolio.Oliwier.Markiewicz/static/media/hamburger.98a56e912489f48d04db31acca20ca85.svg",
     "static/media/hamburger_x.svg": "/Portfolio.Oliwier.Markiewicz/static/media/hamburger_x.d271a45ae98d0fc01c7133e80b84fa39.svg",
-    "main.39042faf.css.map": "/Portfolio.Oliwier.Markiewicz/static/css/main.39042faf.css.map",
-    "main.61b7e47d.js.map": "/Portfolio.Oliwier.Markiewicz/static/js/main.61b7e47d.js.map",
+    "main.6b7bf841.css.map": "/Portfolio.Oliwier.Markiewicz/static/css/main.6b7bf841.css.map",
+    "main.541a57aa.js.map": "/Portfolio.Oliwier.Markiewicz/static/js/main.541a57aa.js.map",
     "787.bb719382.chunk.js.map": "/Portfolio.Oliwier.Markiewicz/static/js/787.bb719382.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.39042faf.css",
-    "static/js/main.61b7e47d.js"
+    "static/css/main.6b7bf841.css",
+    "static/js/main.541a57aa.js"
   ]
 }
