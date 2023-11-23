@@ -1,6 +1,6 @@
-import courses from '../assets/images/projects/courses.png';
-import hotel from '../assets/images/projects/hotel.png';
-import misia from '../assets/images/projects/photo.png';
+import courses from '../assets/images/projects/courses.webp';
+import hotel from '../assets/images/projects/hotel.webp';
+import misia from '../assets/images/projects/photo.webp';
 
 export const projects = [
     {
