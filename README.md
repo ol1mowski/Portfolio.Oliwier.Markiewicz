@@ -33,10 +33,13 @@
 
 ## About The Project
 
+
+
 A portfolio for a web developer is a curated collection of their past projects, skills, and achievements, showcased in a visually appealing and organized manner. This online platform serves as a digital resume and a demonstration of the developer's capabilities to potential clients or employers.
 
 ## Built With
 
+![sssss](https://github.com/ol1mowski/Portfolio.Oliwier.Markiewicz/assets/101707516/e7452246-f087-4e97-90c3-cba8f4b961b7)
 
 
 * [React](https://react.dev/)
