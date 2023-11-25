@@ -17,7 +17,6 @@
   </p>
 </p>
 
-![Contributors](https://img.shields.io/github/contributors/ol1mowski/Portfolio.Oliwier.Markiewicz?color=dark-green) ![Issues](https://img.shields.io/github/issues/ol1mowski/Portfolio.Oliwier.Markiewicz) ![License](https://img.shields.io/github/license/ol1mowski/Portfolio.Oliwier.Markiewicz) 
 
 ## Table Of Contents
 
@@ -34,6 +33,7 @@
 ## About The Project
 
 
+![Contributors](https://img.shields.io/github/contributors/ol1mowski/Portfolio.Oliwier.Markiewicz?color=dark-green) ![Issues](https://img.shields.io/github/issues/ol1mowski/Portfolio.Oliwier.Markiewicz) ![License](https://img.shields.io/github/license/ol1mowski/Portfolio.Oliwier.Markiewicz) 
 
 A portfolio for a web developer is a curated collection of their past projects, skills, and achievements, showcased in a visually appealing and organized manner. This online platform serves as a digital resume and a demonstration of the developer's capabilities to potential clients or employers.
 
