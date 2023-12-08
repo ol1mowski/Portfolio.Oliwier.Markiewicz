@@ -25,7 +25,6 @@
     &__menu {
         display: none;
         transform: translateX(-20rem);
-        transition: all .7s;
         z-index: 300;
         width: 100vw;
         position: fixed;
@@ -33,6 +32,7 @@
         color: $text-dark-color;
         top: 0;
         height: 100vh;
+        animation: showMenu .7s linear forwards;
 
         &__x {
             height: 10%;
@@ -56,5 +56,14 @@
                 font-size: 2rem;
             }
         }
+    }
+}
+
+@keyframes showMenu {
+    0% {
+        transform: translateX(-100vw);
+    }
+    100% {
+        transform: translateX(0);
     }
 }

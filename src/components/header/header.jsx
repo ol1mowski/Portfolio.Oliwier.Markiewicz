@@ -1,10 +1,9 @@
-// Header.js
 import style from "./header.module.scss";
 import x from "../../assets/icons/hamburger_x.svg";
 import hamburger from "../../assets/icons/hamburger.svg";
 import { useEffect, useRef } from "react";
 import NavBar from "./NavBar/NavBar";
-import MenuItem from "./MenuItem/MenuItem"; // Importujemy nowy komponent
+import MenuItem from "./MenuItem/MenuItem";
 
 const Header = () => {
   const hamburegr = useRef(null);
@@ -29,8 +28,6 @@ const Header = () => {
 
   useEffect(() => {
     const hamburgerClickHandler = () => {
-      menu.current.style.transform = "translateX(0)";
-      menu.current.style.transition = "transform 0.7s";
       menu.current.style.display = "block";
     };
 
