@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/Portfolio.Oliwier.Markiewicz/static/css/main.66eb0a09.css",
-    "main.js": "/Portfolio.Oliwier.Markiewicz/static/js/main.827517d4.js",
+    "main.css": "/Portfolio.Oliwier.Markiewicz/static/css/main.b8d7435e.css",
+    "main.js": "/Portfolio.Oliwier.Markiewicz/static/js/main.a3688ea2.js",
     "static/js/787.bb719382.chunk.js": "/Portfolio.Oliwier.Markiewicz/static/js/787.bb719382.chunk.js",
     "static/media/about.webp": "/Portfolio.Oliwier.Markiewicz/static/media/about.66b8ab8573ee5633c22a.webp",
     "static/media/hotel.webp": "/Portfolio.Oliwier.Markiewicz/static/media/hotel.3bd285f59f8e7cc6ac87.webp",
@@ -15,12 +15,12 @@
     "index.html": "/Portfolio.Oliwier.Markiewicz/index.html",
     "static/media/hamburger.svg": "/Portfolio.Oliwier.Markiewicz/static/media/hamburger.98a56e912489f48d04db31acca20ca85.svg",
     "static/media/hamburger_x.svg": "/Portfolio.Oliwier.Markiewicz/static/media/hamburger_x.d271a45ae98d0fc01c7133e80b84fa39.svg",
-    "main.66eb0a09.css.map": "/Portfolio.Oliwier.Markiewicz/static/css/main.66eb0a09.css.map",
-    "main.827517d4.js.map": "/Portfolio.Oliwier.Markiewicz/static/js/main.827517d4.js.map",
+    "main.b8d7435e.css.map": "/Portfolio.Oliwier.Markiewicz/static/css/main.b8d7435e.css.map",
+    "main.a3688ea2.js.map": "/Portfolio.Oliwier.Markiewicz/static/js/main.a3688ea2.js.map",
     "787.bb719382.chunk.js.map": "/Portfolio.Oliwier.Markiewicz/static/js/787.bb719382.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.66eb0a09.css",
-    "static/js/main.827517d4.js"
+    "static/css/main.b8d7435e.css",
+    "static/js/main.a3688ea2.js"
   ]
 }
