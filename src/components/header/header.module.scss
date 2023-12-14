@@ -1,69 +1,80 @@
-@import '../../sass/settings.scss';
+@import "../../sass/settings.scss";
 
 .headerContainer {
-    @include nav;
-    padding: 2rem 0;
-    justify-content: space-around;
-    position: sticky;
-    z-index: 100;
+  @include nav;
+  padding: 2rem 0;
+  justify-content: space-around;
+  position: sticky;
+  z-index: 100;
+  top: 0;
+  gap: 30vw;
+
+  &__nameSection {
+    &__content {
+      color: $text-dark-color;
+      font-weight: 800;
+    }
+  }
+
+  &__navSection {
+    @media screen and (min-width: map-get($breakpoints, big-tablets)) {
+      display: none;
+    }
+  }
+
+  &__menu {
+    display: none;
+    transform: translateX(-20rem);
+    z-index: 300;
+    width: 100vw;
+    position: fixed;
+    background-color: #fff;
+    color: $text-dark-color;
     top: 0;
-    gap: 30vw;
+    height: 100vh;
+    animation: showMenu 0.7s linear forwards;
 
-    &__nameSection {
-        &__content {
-            color: $text-dark-color;
-            font-weight: 800;
-        }
+    &__img {
+      position: absolute;
+      top: 5rem;
+      left: 3rem;
+    }
+    &__imgPy {
+      position: absolute;
+      bottom: 3rem;
+      right: 3rem;
     }
 
-    &__navSection {
-        @media screen and (min-width: map-get($breakpoints, big-tablets)) {
-            display: none;
-        }
+    &__x {
+      height: 10%;
+      display: flex;
+      justify-content: flex-end;
+
+      &__icon {
+        width: 2rem;
+        margin-top: 1rem;
+        margin-right: 2rem;
+      }
     }
 
-    &__menu {
-        display: none;
-        transform: translateX(-20rem);
-        z-index: 300;
-        width: 100vw;
-        position: fixed;
-        background-color: #fff;
-        color: $text-dark-color;
-        top: 0;
-        height: 100vh;
-        animation: showMenu .7s linear forwards;
+    &__nav {
+      @include d-flex-column;
+      height: 90%;
 
-        &__x {
-            height: 10%;
-            display: flex;
-            justify-content: flex-end;
-
-            &__icon {
-                width: 2rem;
-                margin-top: 1rem;
-                margin-right: 2rem;
-            }
-        }
-
-        &__nav {
-            @include d-flex-column;
-            height: 90%;
-
-            &__item {
-                margin-bottom: 2rem;
-                font-weight: 500;
-                font-size: 2rem;
-            }
-        }
+      &__item {
+        margin-bottom: 2rem;
+        font-weight: 500;
+        font-size: 2rem;
+      }
     }
+  }
 }
 
 @keyframes showMenu {
-    0% {
-        transform: translateX(-100vw);
-    }
-    100% {
-        transform: translateX(0);
-    }
+  0% {
+    transform: translateX(-100vw);
+  }
+  100% {
+    transform: translateX(0);
+  }
 }

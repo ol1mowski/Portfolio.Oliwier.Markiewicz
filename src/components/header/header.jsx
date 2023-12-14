@@ -77,6 +77,7 @@ const Header = () => {
       </header>
 
       <nav ref={menu} className={style.headerContainer__menu}>
+      <img width="150" height="150" src="https://img.icons8.com/clouds/150/react.png" alt="react" className={style.headerContainer__menu__img}/>
         <div className={style.headerContainer__menu__x}>
           <img
             ref={closeRefs[0]}
@@ -97,6 +98,7 @@ const Header = () => {
             />
           ))}
         </section>
+        <img className={style.headerContainer__menu__imgPy} width="150" height="150" src="https://img.icons8.com/clouds/150/python.png" alt="python"/>
       </nav>
     </>
   );
