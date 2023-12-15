@@ -1,10 +1,9 @@
-// Header.js
 import style from "./header.module.scss";
 import x from "../../assets/icons/hamburger_x.svg";
 import hamburger from "../../assets/icons/hamburger.svg";
 import { useEffect, useRef } from "react";
 import NavBar from "./NavBar/NavBar";
-import MenuItem from "./MenuItem/MenuItem"; // Importujemy nowy komponent
+import MenuItem from "./MenuItem/MenuItem";
 
 const Header = () => {
   const hamburegr = useRef(null);
@@ -29,8 +28,6 @@ const Header = () => {
 
   useEffect(() => {
     const hamburgerClickHandler = () => {
-      menu.current.style.transform = "translateX(0)";
-      menu.current.style.transition = "transform 0.7s";
       menu.current.style.display = "block";
     };
 
@@ -80,6 +77,7 @@ const Header = () => {
       </header>
 
       <nav ref={menu} className={style.headerContainer__menu}>
+      <img width="150" height="150" src="https://img.icons8.com/clouds/150/react.png" alt="react" className={style.headerContainer__menu__img}/>
         <div className={style.headerContainer__menu__x}>
           <img
             ref={closeRefs[0]}
@@ -100,6 +98,7 @@ const Header = () => {
             />
           ))}
         </section>
+        <img className={style.headerContainer__menu__imgPy} width="150" height="150" src="https://img.icons8.com/clouds/150/python.png" alt="python"/>
       </nav>
     </>
   );
