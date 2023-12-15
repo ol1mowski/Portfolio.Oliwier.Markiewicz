@@ -1,11 +1,18 @@
 import Project from './project/project';
 import style from './projects.module.scss';
-import { projects } from '../../data/projects';
+
+import { useQuery } from '@tanstack/react-query';
+import { fetchProjects } from '../../util/http';
 
 const Projects = () => {
 
+    const { data } = useQuery({
+        queryKey: ['projects'],
+        queryFn: fetchProjects,
+    })
 
-    const PROJECTS = projects;
+
+    const PROJECTS = data || [];
 
     return (
         <>
@@ -22,13 +29,13 @@ const Projects = () => {
                     {PROJECTS.map((val) => (
                         <Project
                             key={val.id}
-                            img={val.img}
+                            img={val.image}
                             title={val.title}
                             date={val.date}
-                            describe={val.describe}
+                            describe={val.description}
                             technologies={val.technologies}
                             github={val.githubLink}
-                            page={val.pageLink}
+                            page={val.liveLink}
                             reverse={val.reverse}
                         />
                     ))}
