@@ -1,20 +1,15 @@
 import style from "./header.module.scss";
+
 import x from "../../assets/icons/hamburger_x.svg";
 import hamburger from "../../assets/icons/hamburger.svg";
-import { useEffect, useRef } from "react";
+
+import { useRef } from "react";
+
 import NavBar from "./NavBar/NavBar";
 import MenuItem from "./MenuItem/MenuItem";
 
 const Header = () => {
-  const hamburegr = useRef(null);
   const menu = useRef(null);
-  const closeRefs = [
-    useRef(null),
-    useRef(null),
-    useRef(null),
-    useRef(null),
-    useRef(null),
-  ];
 
   const buttonVariants = {
     hover: {
@@ -26,27 +21,14 @@ const Header = () => {
     },
   };
 
-  useEffect(() => {
-    const hamburgerClickHandler = () => {
-      menu.current.style.display = "block";
-    };
+  const showMenuHandler = () => {
+    menu.current.style.display = "block";
+  };
 
-    const menuClickHandler = () => {
-      menu.current.style.display = "none";
-    };
+  const hideMenuHandler = () => {
+    menu.current.style.display = "none";
+  };
 
-    hamburegr.current.addEventListener("click", hamburgerClickHandler);
-    closeRefs.forEach((ref) =>
-      ref.current.addEventListener("click", menuClickHandler)
-    );
-
-    return () => {
-      hamburegr.current.removeEventListener("click", hamburgerClickHandler);
-      closeRefs.forEach((ref) =>
-        ref.current.removeEventListener("click", menuClickHandler)
-      );
-    };
-  }, [hamburegr, menu, closeRefs]);
 
   const menuItems = [
     { to: "home", label: "Home" },
@@ -66,7 +48,7 @@ const Header = () => {
         <nav className={style.headerContainer__navSection}>
           <div className={style.headerContainer__navSection__icon}>
             <img
-              ref={hamburegr}
+              onClick={showMenuHandler}
               src={hamburger}
               alt="hamburger manu icon"
               className={style.headerContainer__navSection__icon__img}
@@ -76,11 +58,16 @@ const Header = () => {
         <NavBar />
       </header>
 
-      <nav ref={menu} className={style.headerContainer__menu}>
-      <img width="150" height="150" src="https://img.icons8.com/clouds/150/react.png" alt="react" className={style.headerContainer__menu__img}/>
+      <nav ref={menu} onClick={hideMenuHandler} className={style.headerContainer__menu}>
+        <img
+          width="150"
+          height="150"
+          src="https://img.icons8.com/clouds/150/react.png"
+          alt="react"
+          className={style.headerContainer__menu__img}
+        />
         <div className={style.headerContainer__menu__x}>
           <img
-            ref={closeRefs[0]}
             src={x}
             alt="close icon"
             className={style.headerContainer__menu__x__icon}
@@ -94,11 +81,17 @@ const Header = () => {
               label={item.label}
               index={index + 1}
               buttonVariants={buttonVariants}
-              closeRef={closeRefs[index + 1]}
+              hideMenu={hideMenuHandler}
             />
           ))}
         </section>
-        <img className={style.headerContainer__menu__imgPy} width="150" height="150" src="https://img.icons8.com/clouds/150/python.png" alt="python"/>
+        <img
+          className={style.headerContainer__menu__imgPy}
+          width="150"
+          height="150"
+          src="https://img.icons8.com/clouds/150/python.png"
+          alt="python"
+        />
       </nav>
     </>
   );

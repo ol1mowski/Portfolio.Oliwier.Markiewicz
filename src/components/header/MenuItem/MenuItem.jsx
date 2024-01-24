@@ -1,10 +1,9 @@
-// MenuItem.js
-import React from "react";
+import style from "./MenuItem.module.scss";
+
 import { Link } from "react-scroll";
 import { motion } from "framer-motion";
-import style from './MenuItem.module.scss';
 
-const MenuItem = ({ to, label, index, buttonVariants, closeRef }) => (
+const MenuItem = ({ to, label, index, buttonVariants, hideMenu }) => (
   <Link
     key={index}
     activeClass="active"
@@ -15,7 +14,7 @@ const MenuItem = ({ to, label, index, buttonVariants, closeRef }) => (
     duration={1200}
   >
     <motion.div
-      ref={closeRef}
+      onClick={hideMenu}
       className={style.item}
       variants={buttonVariants}
       whileHover="hover"
