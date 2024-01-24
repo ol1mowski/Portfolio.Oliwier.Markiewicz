@@ -1,4 +1,4 @@
-import style from './Project.module.scss';
+import style from './project.module.scss';
 import ProjectComponent from './ProjectComponent/ProjectComponent';
 
 const Project = ({ reverse, img, title, describe, technologies, page, github, date }) => {

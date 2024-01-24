@@ -1,4 +1,4 @@
-import style from "../Project.module.scss";
+import style from "../project.module.scss";
 
 const ProjectComponent = ({
   img,

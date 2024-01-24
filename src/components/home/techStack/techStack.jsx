@@ -1,4 +1,4 @@
-import style from './TechStack.module.scss';
+import style from './techStack.module.scss';
 import htmlcss from '../../../assets/icons/htmlcss.svg';
 import jsts from '../../../assets/icons/jsts.svg';
 import reactsass from '../../../assets/icons/reactsass.svg';

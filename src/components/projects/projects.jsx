@@ -1,5 +1,5 @@
-import Project from './Project/Project';
-import style from './Projects.module.scss';
+import Project from './project/project';
+import style from './projects.module.scss';
 
 import { useQuery } from '@tanstack/react-query';
 import { fetchProjects } from '../../util/http';

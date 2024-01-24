@@ -1,9 +1,9 @@
-import style from "./Header.module.scss";
+import style from "./header.module.scss";
 import x from "../../assets/icons/hamburger_x.svg";
 import hamburger from "../../assets/icons/hamburger.svg";
 import { useEffect, useRef } from "react";
-import NavBar from "./NavBar/NavBar";
-import MenuItem from "./MenuItem/MenuItem";
+import NavBar from "./navBar/navBar";
+import MenuItem from "./menuItem/menuItem";
 
 const Header = () => {
   const hamburegr = useRef(null);

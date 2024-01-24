@@ -1,9 +1,9 @@
-import Header from "../components/Header/Header";
-import Home from '../components/Home/Home';
-import About from '../components/About/About';
-import Projects from '../components/Projects/Projects';
-import Contact from "../components/Contact/Contact";
-import Footer from '../components/Footer/Footer';
+import Header from "../components/header/header";
+import Home from '../components/home/home';
+import About from '../components/about/about';
+import Projects from '../components/projects/projects';
+import Contact from "../components/contact/contact";
+import Footer from '../components/footer/footer';
 
 
 export default function PageLayout() {

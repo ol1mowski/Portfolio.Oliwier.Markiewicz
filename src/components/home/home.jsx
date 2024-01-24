@@ -1,6 +1,6 @@
-import style from './Home.module.scss';
+import style from './home.module.scss';
 import img from '../../assets/images/portret.webp';
-import TechStack from './TechStack/TechStack';
+import TechStack from './techStack/techStack';
 
 const Home = () => {
     return (

@@ -2,7 +2,7 @@
 import React from "react";
 import { Link } from "react-scroll";
 import { motion } from "framer-motion";
-import style from './MenuItem.module.scss';
+import style from './menuItem.module.scss';
 
 const MenuItem = ({ to, label, index, buttonVariants, closeRef }) => (
   <Link
