@@ -1,7 +1,7 @@
 import { Link } from "react-scroll";
 import { motion } from "framer-motion";
 
-import style from "./navBar.module.scss";
+import style from "./NavBar.module.scss";
 
 const NavBar = () => {
   const buttonVariants = {
