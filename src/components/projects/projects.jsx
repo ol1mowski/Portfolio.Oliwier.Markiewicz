@@ -1,4 +1,4 @@
-import Project from './project/Project';
+import Project from './Project/Project';
 import style from './Projects.module.scss';
 
 import { useQuery } from '@tanstack/react-query';

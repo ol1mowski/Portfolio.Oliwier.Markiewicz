@@ -1,4 +1,4 @@
-import style from "./header.module.scss";
+import style from "./Header.module.scss";
 import x from "../../assets/icons/hamburger_x.svg";
 import hamburger from "../../assets/icons/hamburger.svg";
 import { useEffect, useRef } from "react";
