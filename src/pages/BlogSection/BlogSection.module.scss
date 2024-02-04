@@ -15,4 +15,75 @@
       @include below-headers;
     }
   }
+  &__projectsWrapper {
+    @include d-flex-column;
+    margin-top: 5rem;
+  }
+}
+
+.sliderContainer {
+  scroll-margin: 20rem;
+  width: 90vw;
+  margin: 2rem auto;
+  @include d-flex-column;
+  justify-content: flex-start;
+  gap: 2rem;
+  animation: slideAnimation 1s linear forwards;
+
+  &__image {
+    width: 80vw;
+
+    &__img {
+      animation: slideAnimation 1s linear forwards;
+      width: 100%;
+      border-radius: 0.7rem;
+    }
+  }
+
+  &__content {
+    @include d-flex-column;
+    align-items: flex-start;
+    padding: 0 7vw;
+    gap: 0.5rem;
+
+    @media screen and (min-width: $tablet) {
+      padding-left: 2rem;
+      padding-right: 0;
+    }
+
+    @media screen and (min-width: $desktop) {
+      padding: 0;
+      gap: 0.7rem;
+    }
+
+    &__category {
+      color: $text-blue-color;
+      font-size: 1rem;
+      font-weight: bold;
+      cursor: pointer;
+    }
+
+    &__title {
+      color: $text-dark-color;
+      font-size: 2rem;
+      font-weight: bold;
+    }
+
+    &__text {
+      @include p;
+    }
+
+    &__read {
+      color: $text-blue-color;
+      font-size: 1rem;
+      font-weight: bold;
+      will-change: scale;
+      transition: scale 0.7s;
+      cursor: pointer;
+      margin-top: 1rem;
+    }
+    &__read:hover {
+      scale: 1.1;
+    }
+  }
 }

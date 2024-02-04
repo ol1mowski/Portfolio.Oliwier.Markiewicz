@@ -3,6 +3,7 @@
 $text-dark-color: #2d2e32;
 $text-blue-color: #147efb;
 
+
 //background colors
 $dark-white-background-color: #f9f9f9;
 $nav-color: #fff;
@@ -62,5 +63,10 @@ $breakpoints: (
   big-tablets: 900px,
   desktop: 1200px,
 );
+
+$mobile: 560px;
+$tablet: 768px;
+$big-tablets: 900px;
+$desktop: 1200px;
 
 $article-margin: 2rem;
