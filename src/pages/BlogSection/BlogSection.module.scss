@@ -4,6 +4,7 @@
   scroll-margin-top: 10rem;
   padding-top: 3rem;
   background-color: $nav-color;
+  margin-bottom: 10rem;
   &__contentSection {
     width: 80%;
     margin: 0 auto;
@@ -26,17 +27,29 @@
   width: 90vw;
   margin: 0 auto;
   @include d-flex-column;
-  justify-content: flex-start;
   gap: 2rem;
-  animation: slideAnimation 1s linear forwards;
+
+  @media screen and (min-width: $big-tablets) {
+    width: 50rem;
+    gap: 7vw;
+  }
+
+  @media screen and (min-width: $desktop) {
+    flex-direction: row;
+    width: 80vw;
+    gap: 7vw;
+    margin-top: 3rem;
+  }
 
   &__image {
     width: 80vw;
+    border-radius: 0.7rem;
 
-    &__img {
-      animation: slideAnimation 1s linear forwards;
-      width: 100%;
-      border-radius: 0.7rem;
+    @media screen and (min-width: $big-tablets) {
+      width: 50vw;
+    }
+    @media screen and (min-width: $desktop) {
+      width: 30rem;
     }
   }
 
@@ -53,6 +66,7 @@
 
     @media screen and (min-width: $desktop) {
       padding: 0;
+      width: 30vw;
       gap: 0.7rem;
     }
 
