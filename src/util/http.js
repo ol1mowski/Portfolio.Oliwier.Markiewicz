@@ -23,3 +23,8 @@ export function fetchProjects() {
   const collectionName = "projects";
   return fetchData(collectionName);
 }
+
+export function fetchPost() {
+  const collectionName = "blog";
+  return fetchData(collectionName);
+}

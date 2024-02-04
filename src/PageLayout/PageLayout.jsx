@@ -4,6 +4,7 @@ import About from '../components/about/about';
 import Projects from '../components/projects/projects';
 import Contact from "../components/contact/contact";
 import Footer from '../components/footer/footer';
+import { BlogSection } from "../pages/BlogSection/BlogSection";
 
 
 export default function PageLayout() {
@@ -11,6 +12,7 @@ export default function PageLayout() {
         <>
             <Header />
             <Home />
+            <BlogSection />
             <About />
             <Projects />
             <Contact />

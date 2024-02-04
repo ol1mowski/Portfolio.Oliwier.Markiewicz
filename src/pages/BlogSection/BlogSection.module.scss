@@ -1,0 +1,103 @@
+@import "../../sass/settings.scss";
+
+.projectsContainer {
+  scroll-margin-top: 10rem;
+  padding-top: 3rem;
+  background-color: $nav-color;
+  margin-bottom: 10rem;
+  &__contentSection {
+    width: 80%;
+    margin: 0 auto;
+    @include d-flex-column;
+    &__h3 {
+      @include small-headers;
+    }
+    &__h4 {
+      @include below-headers;
+    }
+  }
+  &__projectsWrapper {
+    @include d-flex-column;
+    margin-top: 5rem;
+  }
+}
+
+.sliderContainer {
+  scroll-margin: 20rem;
+  width: 90vw;
+  margin: 0 auto;
+  @include d-flex-column;
+  gap: 2rem;
+
+  @media screen and (min-width: $big-tablets) {
+    width: 50rem;
+    gap: 7vw;
+  }
+
+  @media screen and (min-width: $desktop) {
+    flex-direction: row;
+    width: 80vw;
+    gap: 7vw;
+    margin-top: 3rem;
+  }
+
+  &__image {
+    width: 80vw;
+    border-radius: 0.7rem;
+
+    @media screen and (min-width: $big-tablets) {
+      width: 50vw;
+    }
+    @media screen and (min-width: $desktop) {
+      width: 30rem;
+    }
+  }
+
+  &__content {
+    @include d-flex-column;
+    align-items: flex-start;
+    padding: 0 7vw;
+    gap: 0.5rem;
+
+    @media screen and (min-width: $tablet) {
+      padding-left: 2rem;
+      padding-right: 0;
+    }
+
+    @media screen and (min-width: $desktop) {
+      padding: 0;
+      width: 30vw;
+      gap: 0.7rem;
+    }
+
+    &__category {
+      color: $text-blue-color;
+      font-size: 1rem;
+      font-weight: bold;
+      cursor: pointer;
+    }
+
+    &__title {
+      color: $text-dark-color;
+      font-size: 2rem;
+      font-weight: bold;
+    }
+
+    &__text {
+      @include p;
+    }
+
+    &__read {
+      color: $text-blue-color;
+      font-size: 1rem;
+      font-weight: bold;
+      will-change: scale;
+      transition: scale 0.7s;
+      cursor: pointer;
+      margin-top: 1rem;
+    }
+    &__read:hover {
+      scale: 1.1;
+    }
+  }
+}
