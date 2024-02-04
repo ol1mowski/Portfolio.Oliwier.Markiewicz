@@ -1,0 +1,18 @@
+@import "../../sass/settings.scss";
+
+.projectsContainer {
+  scroll-margin-top: 10rem;
+  padding-top: 3rem;
+  background-color: $nav-color;
+  &__contentSection {
+    width: 80%;
+    margin: 0 auto;
+    @include d-flex-column;
+    &__h3 {
+      @include small-headers;
+    }
+    &__h4 {
+      @include below-headers;
+    }
+  }
+}
