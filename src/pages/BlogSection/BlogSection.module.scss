@@ -24,7 +24,7 @@
 .sliderContainer {
   scroll-margin: 20rem;
   width: 90vw;
-  margin: 2rem auto;
+  margin: 0 auto;
   @include d-flex-column;
   justify-content: flex-start;
   gap: 2rem;
