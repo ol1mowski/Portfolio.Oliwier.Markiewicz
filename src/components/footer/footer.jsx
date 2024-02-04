@@ -1,13 +1,17 @@
 import style from './footer.module.scss';
 
 const Footer = () => {
+
+    const date = new Date();
+
+
     return (
         <>
             <footer className={style.footerContainer}>
                 <div className={style.footerContainer__wrapper}>
                     <div className={style.footerContainer__wrapper__header}>
                         <h3 className={style.footerContainer__wrapper__header__h3}>
-                            Copyright © 2023. All rights are reserved
+                            Copyright © {date.getFullYear()}. All rights are reserved
                         </h3>
                     </div>
                     <div className={style.footerContainer__wrapper__icons}>
