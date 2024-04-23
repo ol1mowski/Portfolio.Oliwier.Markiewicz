@@ -3,6 +3,7 @@ import htmlcss from '../../../assets/icons/htmlcss.svg';
 import jsts from '../../../assets/icons/jsts.svg';
 import reactsass from '../../../assets/icons/reactsass.svg';
 import python from '../../../assets/icons/python.svg';
+import next from '../../../assets/icons/next.svg';
 
 const TechStack = () => {
     return (
@@ -18,6 +19,7 @@ const TechStack = () => {
                     <img src={jsts} alt='js ts icons' className={style.techStackContainer__skillsWrapper__skill} />
                     <img src={reactsass} alt='react sass icons' className={style.techStackContainer__skillsWrapper__skill} />
                     <img src={python} alt='python icons' className={style.techStackContainer__skillsWrapper__skill__python} />
+                    <img src={next} alt='python icons' className={style.techStackContainer__skillsWrapper__skill__next} />
                 </div>
             </section>
         </>
